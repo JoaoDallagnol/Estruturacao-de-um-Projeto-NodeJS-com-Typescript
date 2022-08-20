@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/server.ts",
+    "build": "sucrase ./src -d ./dist --transforms typescript,imports"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/JoaoDallagnol/Estruturacao-de-um-Projeto-NodeJS-com-Typescript/issues"
   },
-  "homepage": "https://github.com/JoaoDallagnol/Estruturacao-de-um-Projeto-NodeJS-com-Typescript#readme"
+  "homepage": "https://github.com/JoaoDallagnol/Estruturacao-de-um-Projeto-NodeJS-com-Typescript#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.19",
+    "sucrase": "^3.25.0",
+    "typescript": "^4.7.4"
+  }
 }
